@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: student-service
+  config:
+    import: "optional:configserver:http://${CONFIG_SERVER_URL:config.platform}:8888"
